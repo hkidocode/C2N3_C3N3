@@ -1,0 +1,23 @@
+{
+  "name": "covid19-website",
+  "version": "0.1.0",
+  "description": "A website which contains how to detect corona virus through specific questions from the Ministry of Health and some advice to prevent it and keep ourselves safe.",
+  "main": "script.js",
+  "scripts": {
+    "compile": "node-sass sass/fichier.scss dist/css/style.css",
+    "watch": "node-sass sass/fichier.scss dist/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkidocode/C2N3_C3N3.git"
+  },
+  "author": "Mustapha Kadouri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkidocode/C2N3_C3N3/issues"
+  },
+  "homepage": "https://github.com/hkidocode/C2N3_C3N3#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
