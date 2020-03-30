@@ -8,8 +8,7 @@
     "watch": "node-sass sass/fichier.scss dist/css/style.css --watch",
     "concat": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.comp.css",
     "prefix": "postcss dist/css/style.concat.css --use=autoprefixer --map=false --output=dist/css/style.prefix.css",
-    "compress": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
-    "build": "npm-run-all watch concat prefix compress"
+    "compress": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",
