@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/hkidocode/C2N3_C3N3#readme",
   "devDependencies": {
+    "concat": "^1.0.3",
     "node-sass": "^4.13.1"
   }
 }
