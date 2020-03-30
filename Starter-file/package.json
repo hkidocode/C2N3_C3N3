@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "compile": "node-sass sass/fichier.scss dist/css/style.css",
-    "watch": "node-sass sass/fichier.scss dist/css/style.css --watch"
+    "watch": "node-sass sass/fichier.scss dist/css/style.css --watch",
+    "concat": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.comp.css",
   },
   "repository": {
     "type": "git",
