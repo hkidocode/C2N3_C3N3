@@ -7,7 +7,7 @@
     "compile": "node-sass sass/fichier.scss dist/css/style.css",
     "watch": "node-sass sass/fichier.scss dist/css/style.css --watch",
     "concat": "concat -o dist/css/style.concat.css dist/css/additional.css dist/css/style.comp.css",
-    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css"
+    "prefix": "postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^9.7.5",
     "concat": "^1.0.3",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0"
   }
 }
