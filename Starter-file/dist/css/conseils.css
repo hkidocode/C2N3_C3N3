@@ -7,10 +7,19 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "Rubik", Helvetica, Arial, sans-serif; }
+  font-family: "Cairo", sans-serif; }
 
 li {
   list-style-type: none; }
 
 a {
   text-decoration: none; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../../../Design/Assets/SVG/Merged-bar-1.svg);
+  background-position: center; }
+  .navbar .menu {
+    display: flex;
+    justify-content: space-between; }

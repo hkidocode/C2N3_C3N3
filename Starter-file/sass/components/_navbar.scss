@@ -1,0 +1,10 @@
+.navbar {
+    @include flexy($just: space-between);   
+    background-image: url(../../../Design/Assets/SVG/Merged-bar-1.svg);
+    background-position: center;
+    .menu {
+     @include flexy($just: space-between);
+
+    }
+}
+
