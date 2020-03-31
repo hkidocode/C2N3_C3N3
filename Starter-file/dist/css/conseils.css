@@ -23,3 +23,16 @@ a {
   .navbar .menu {
     display: flex;
     justify-content: space-between; }
+
+.latest-info-section {
+  background-color: #F4CF1B;
+  padding: 30px 0; }
+  .latest-info-section .wrapper {
+    width: 85%;
+    margin: auto;
+    text-align: center; }
+    .latest-info-section .wrapper__heading {
+      color: #1078AD;
+      margin-bottom: 40px; }
+    .latest-info-section .wrapper__description {
+      line-height: 1.5; }
