@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -15,7 +16,7 @@ li {
 a {
   text-decoration: none; }
 
-.last-info-div, .header-section-content__description {
+.last-info-div, .header-section-content__description, .symptômes-section {
   width: 85%;
   margin: auto;
   text-align: center; }
@@ -47,7 +48,7 @@ a {
     padding: 30px 0;
     width: 93vw; }
   .header-section-content__heading {
-    font-size: 1.0625em;
+    font-size: 1.1875em;
     color: #1078AD;
     width: 65%;
     margin: auto;
@@ -69,9 +70,26 @@ a {
     outline: none;
     margin: auto;
     width: 80%;
-    padding: 12px 0;
+    padding: 8px 0;
     color: white;
     background-color: #1078AD;
     border-radius: 3px;
     font-size: 1.5em;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 40px; }
+
+.symptômes-section__heading {
+  font-size: 1.375em;
+  color: #1078AD;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.flex-container-items {
+  margin-bottom: 30px; }
+  .flex-container-items__img {
+    margin-bottom: 20px; }
+  .flex-container-items__description {
+    margin: auto;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600; }

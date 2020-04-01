@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box; }
 
@@ -15,7 +16,7 @@ li {
 a {
   text-decoration: none; }
 
-.last-info-div, .header-div {
+.last-info-div, .header-div, .symptômes-section {
   width: 85%;
   margin: auto;
   text-align: center; }
@@ -40,3 +41,19 @@ a {
 
 .last-info-div__description {
   line-height: 1.5; }
+
+.symptômes-section__heading {
+  font-size: 1.375em;
+  color: #1078AD;
+  font-weight: 700;
+  margin-bottom: 20px; }
+
+.flex-container-items {
+  margin-bottom: 30px; }
+  .flex-container-items__img {
+    margin-bottom: 20px; }
+  .flex-container-items__description {
+    margin: auto;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600; }

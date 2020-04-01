@@ -1,0 +1,24 @@
+.symptômes-section {
+    @extend %center;
+    &__heading {
+        font-size: em(22px);
+        color: $color-primary-blue;
+        font-weight: $font-weight-bold;
+        margin-bottom: 20px;
+    }
+
+}
+
+.flex-container-items {
+    margin-bottom: 30px;
+    &__img {
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        margin: auto;
+        text-align: center;
+        font-size: em(20px);
+        font-weight: $font-weight-medium;
+    }
+}

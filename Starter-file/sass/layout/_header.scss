@@ -6,7 +6,7 @@
     }
     &-content {
         &__heading {
-            font-size: em(17px);
+            font-size: em(19px);
             color: $color-primary-blue;
             width: 65%;
             margin: auto;
@@ -34,9 +34,8 @@
             display: block;
             outline: none;
             margin: auto;
-           @include btn-style(80%, 12px 0, white, $color-primary-blue, em(24px), $font-weight-bold);
-            
-            
+           @include btn-style(80%, 8px 0, white, $color-primary-blue, em(24px), $font-weight-bold);
+           margin-bottom: 40px;
             
         }
     }
