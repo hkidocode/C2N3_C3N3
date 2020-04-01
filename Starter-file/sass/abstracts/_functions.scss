@@ -1,5 +1,5 @@
 // Px to Em
-@function em($target, $context: $font-size) {
+@function em($target, $context: $base-font-size) {
     @return ($target / $context) * 1em;
 }
 

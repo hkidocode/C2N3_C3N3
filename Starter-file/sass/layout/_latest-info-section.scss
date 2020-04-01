@@ -1,14 +1,16 @@
 .latest-info-section {
     background-color: $color-neutral-yellow;
     padding: 30px 0;
-    .last-info-div {
-        @extend %center;
-        &__heading {
-            color: $color-primary-blue;
-            margin-bottom: 25px;
-        }
-        &__description {
-            line-height: 1.5;
-        }
-    }    
 }
+
+.last-info-div {
+    @extend %center;
+    &__heading {
+        color: $color-primary-blue;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    &__description {
+        line-height: 1.5;
+    }
+}    

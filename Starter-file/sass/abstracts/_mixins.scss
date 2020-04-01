@@ -16,11 +16,11 @@
 
 
 // Button Style 
-@mixin btn-style($w, $h, $color, $bg-color, $pd, $font-sz, $font-wg) {
+@mixin btn-style($w, $pd, $color, $bg-color, $font-sz, $font-wg) {
     width: $w;
-    height: $h;
-    background-color: $bg-color;
+    padding: $pd;
     color: $color;
+    background-color: $bg-color;
     border-radius: 3px;
     font-size: $font-sz;
     font-weight: $font-wg;
