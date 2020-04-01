@@ -2,6 +2,10 @@
     @include flexy($just: space-between);   
     background-image: url(../../../Design/Assets/SVG/Merged-bar-1.svg);
     background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     .menu {
      @include flexy($just: space-between);
 

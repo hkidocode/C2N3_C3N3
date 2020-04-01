@@ -1,6 +1,7 @@
 .recommendation-section {
     text-align: center;
     padding: 30px 0;
+    border-radius: 4px 4px 0 0;
     background-color: $color-primary-blue;
     &__heading {
         color: $color-accent-blue;
@@ -49,6 +50,7 @@
     background-color: $color-accent-blue;
     text-align: center;
     padding: 20px 0;
+    border-radius: 0 0 4px 4px;
     &__description {
         font-size: em(14px);
         color: $color-primary-blue;

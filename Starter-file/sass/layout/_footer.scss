@@ -1,0 +1,94 @@
+.footer {
+    @extend %center;
+    padding: 30px 0;
+    &__img {
+        margin-bottom: 20px;
+    }
+
+    &__contact {
+        @include flexy($just: space-between);
+    }
+
+.nav-footer {
+    &__button {
+        outline: none;
+        padding-right: 26px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        padding-left: 6px;
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid $color-primary-blue;
+        font-weight: $font-weight-medium;
+        margin-bottom: 16px;
+        background-image: url(../../../Design/Assets/png/maps-and-location.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        
+    }
+
+    &__item {
+        margin-bottom: 16px;
+        &--acceuil {
+            color: $color-primary-blue;
+            font-weight: bold;
+            font-size: em(15px);
+        }
+
+        &--conseil {
+            font-weight: bold;
+            font-size: em(15px); 
+        }
+    }
+
+}
+
+
+    &__copyright {
+        font-size: em(12px);
+        line-height: 1.6;
+        width: 95%;
+        margin: auto;
+        color: grey;
+    }
+    
+}
+
+.contact {
+    margin-bottom: 40px;
+    &__text {
+        color: $color-primary-blue;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    &__alo {
+        font-weight: $font-weight-medium;
+        font-size: em(13px);
+        margin-bottom: 8px;
+    }
+
+    &__telephone {
+        color: $color-secondary-soft-green;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    &__medicale {
+        font-weight: $font-weight-medium;
+        font-size: em(13px);
+        margin-bottom: 8px;
+    }
+
+    &__114 {
+        color: $color-secondary-soft-green;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+}
+
+.decoration-bottom {
+    background-color: $color-primary-blue;
+    border-radius: 4px 4px 0 0;
+    padding-bottom: 20px;
+}
