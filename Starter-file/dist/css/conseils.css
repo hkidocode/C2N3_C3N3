@@ -15,7 +15,7 @@ li {
 a {
   text-decoration: none; }
 
-.latest-info-section .wrapper {
+.latest-info-section .last-info-div, .header-div {
   width: 85%;
   margin: auto;
   text-align: center; }
@@ -32,8 +32,8 @@ a {
 .latest-info-section {
   background-color: #F4CF1B;
   padding: 30px 0; }
-  .latest-info-section .wrapper__heading {
+  .latest-info-section .last-info-div__heading {
     color: #1078AD;
     margin-bottom: 25px; }
-  .latest-info-section .wrapper__description {
+  .latest-info-section .last-info-div__description {
     line-height: 1.5; }
