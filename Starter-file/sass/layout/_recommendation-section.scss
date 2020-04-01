@@ -1,0 +1,71 @@
+.recommendation-section {
+    text-align: center;
+    padding: 30px 0;
+    background-color: $color-primary-blue;
+    &__heading {
+        color: $color-accent-blue;
+        margin-bottom: 20px;
+        font-size: em(22px);
+        font-weight: $font-weight-bold;
+    }
+}
+
+.recommendation-flex {
+    width: 75%;
+    margin: auto;
+    &__paragraph {
+        color: white;
+        line-height: 1.5;
+        font-size: em(15px);
+        font-weight: $font-weight-medium;
+        margin-bottom: 20px;
+    }
+    
+    &__contact {
+        &--heading {
+            font-size: em(18px);
+            color: $color-neutral-yellow;
+            margin-bottom: 10px;
+            font-weight: bold;
+            
+        }
+        &--button {
+            border: 0;
+            display: block;
+            outline: none;
+            margin: auto;
+            @include btn-style(60%, 8px 0, $color-primary-blue, $color-neutral-yellow, em(22px), $font-weight-bold);
+            margin-bottom: 30px;
+        }
+        &--website a {
+            color: white;
+            padding-bottom: 2px;
+            border-bottom: 3px solid $color-neutral-yellow;
+        }
+    }
+}
+
+.test-rappel {
+    background-color: $color-accent-blue;
+    text-align: center;
+    padding: 20px 0;
+    &__description {
+        font-size: em(14px);
+        color: $color-primary-blue;
+        margin-bottom: 10px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    &__icon img {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 16px;
+    }
+    &__button {
+        border: 0;
+        display: block;
+        outline: none;
+        margin: auto;
+        @include btn-style(60%, 6px 0, white, $color-primary-blue, em(19px), $font-weight-medium);
+    }
+}
