@@ -22,3 +22,30 @@
         font-weight: $font-weight-medium;
     }
 }
+
+
+@include mq('large') {
+
+.symptômes-section {
+    margin-bottom: 60px;
+    &__heading {
+        font-size: em(26px);
+        margin-bottom: 60px;
+    }
+
+}
+
+    .flex-container {
+        @include flexy();
+    }
+
+    .flex-container-items {
+        flex-grow: 1;
+        flex-basis: px-to-pct(200px);
+        &__description {
+            font-size: em(24px);
+        }
+      
+    }
+   
+}

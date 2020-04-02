@@ -71,3 +71,56 @@
         @include btn-style(60%, 6px 0, white, $color-primary-blue, em(19px), $font-weight-medium);
     }
 }
+
+@include mq('large') {
+    .recommendation-section {
+        padding-bottom: 40px;
+        &__heading {
+            font-size: em(28px);
+            margin-bottom: 60px;
+        }
+    }
+    
+    .recommendation-flex {
+        width: 90%;
+        @include flexy($just: space-between);
+        
+
+        &__paragraph {
+            width: 40%;
+            flex-basis: 600px;
+            text-align: left;
+            font-size: em(18px);
+        }
+
+        &__contact {
+            width: 60%;
+            flex-basis: 400px;
+
+            &--heading {
+                font-size: em(20px);
+                
+            }
+            &--button {
+                @include btn-style(60%, 8px 0, $color-primary-blue, $color-neutral-yellow, em(24px), $font-weight-bold);
+            }
+            &--website a {
+                font-size: em(18px);
+                
+            }
+            
+        }         
+     }
+
+     .test-rappel {
+        padding: 40px 0;
+        &__description {
+            font-size: em(24px);
+        }
+        &__button {
+            @include btn-style(30%, 8px 0, white, $color-primary-blue, em(19px), $font-weight-medium);
+        }   
+    }
+        
+    
+}

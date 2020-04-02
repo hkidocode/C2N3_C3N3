@@ -7,9 +7,13 @@
 
     &__contact {
         @include flexy($just: space-between);
+
     }
 
 .nav-footer {
+    flex-grow: 1;
+    flex-basis: px-to-pct(300px);
+    margin-right: 80px;
     &__button {
         outline: none;
         padding-right: 26px;
@@ -56,6 +60,8 @@
 
 .contact {
     margin-bottom: 40px;
+    flex-grow: 1;
+    flex-basis: px-to-pct(500px);
     &__text {
         color: $color-primary-blue;
         font-weight: bold;
@@ -91,4 +97,130 @@
     background-color: $color-primary-blue;
     border-radius: 4px 4px 0 0;
     padding-bottom: 20px;
+}
+
+@include mq('medium') {
+   
+
+    .nav-footer {
+        flex-basis: px-to-pct(500px);
+        &__button {
+            padding-right: 30px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+            padding-left: 7px;            
+        }
+    
+        &__item {
+            &--acceuil {
+                font-size: em(17px);
+            }
+    
+            &--conseil {
+                font-size: em(17px); 
+            }
+        }
+    
+    }
+
+    .contact {
+        flex-basis: px-to-pct(300px);
+        &__text {
+            font-size: em(16px);
+        }
+    
+        &__alo {
+            font-size: em(16px);
+        }
+    
+        &__telephone {
+            font-size: em(16px);
+        }
+    
+        &__medicale {
+            font-size: em(16px);
+        }
+    
+        &__114 {
+            font-size: em(13px);
+        }
+    }
+
+    .footer {
+        &__copyright {
+            font-size: em(14px);
+        }
+    }
+    
+
+}
+
+@include mq('large') {
+    
+    .flex-footer {
+        @include flexy();
+    }
+
+    .footer {
+        &__contact {
+            flex-grow: 1;
+            flex-basis: px-to-pct(900px);
+            margin-right: 80px;
+        }
+
+        &__copyright {
+            font-size: em(14px);
+            flex-grow: 1;
+            flex-basis: px-to-pct(700px);
+            text-align: left;
+        }
+    }
+
+    .nav-footer {
+        flex-basis: px-to-pct(500px);
+        &__button {
+            padding-right: 30px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+            padding-left: 7px;            
+        }
+    
+        &__item {
+            &--acceuil {
+                font-size: em(17px);
+            }
+    
+            &--conseil {
+                font-size: em(17px); 
+            }
+        }
+    
+    }
+
+    .contact {
+        flex-basis: px-to-pct(300px);
+        &__text {
+            font-size: em(16px);
+        }
+    
+        &__alo {
+            font-size: em(16px);
+        }
+    
+        &__telephone {
+            font-size: em(16px);
+        }
+    
+        &__medicale {
+            font-size: em(16px);
+        }
+    
+        &__114 {
+            font-size: em(13px);
+        }
+    }
+
+   
+    
+
 }
