@@ -16,7 +16,7 @@ li {
 a {
   text-decoration: none; }
 
-.last-info-div, .protège-section, .symptômes-section, .footer {
+.last-info-div, .protège-section, .info-div, .symptômes-section, .footer {
   width: 85%;
   margin: auto;
   text-align: center; }
@@ -99,7 +99,7 @@ a {
     font-size: 1em;
     font-weight: 600;
     color: #1A519E;
-    width: 30%;
+    width: 40%;
     margin: auto; }
 
 .last-flex-item {
@@ -135,6 +135,51 @@ a {
     margin-bottom: 80px; }
     .last-flex-item__description {
       font-size: 1.25em; } }
+
+.generale-info-section {
+  background-color: #96C5DC;
+  padding: 30px 0;
+  border-radius: 4px;
+  margin-bottom: 60px; }
+
+.info-div__heading {
+  color: #1078AD;
+  margin-bottom: 20px;
+  font-size: 1.375em;
+  font-weight: 700; }
+
+.info-div__paragraph {
+  color: #1A519E;
+  line-height: 1.5;
+  font-size: 1em;
+  font-weight: 600; }
+
+.info-div__button {
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  width: 80%;
+  padding: 8px 0;
+  color: white;
+  background-color: #1078AD;
+  border-radius: 3px;
+  font-size: 1.0625em;
+  font-weight: 700; }
+
+@media (min-width: 993px) and (max-width: 1400px) {
+  .info-div__heading {
+    font-size: 1.75em; }
+  .info-div__paragraph {
+    font-size: 1.25em; }
+  .info-div__button {
+    width: 30%;
+    padding: 10px 0;
+    color: white;
+    background-color: #1078AD;
+    border-radius: 3px;
+    font-size: 1.1875em;
+    font-weight: 700;
+    margin-right: 20px; } }
 
 .symptômes-section__heading {
   font-size: 1.375em;

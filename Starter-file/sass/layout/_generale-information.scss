@@ -1,0 +1,47 @@
+.generale-info-section {
+    background-color: $color-accent-blue;
+    padding: 30px 0;
+    border-radius: 4px;
+    margin-bottom: 60px;
+}
+
+.info-div {
+    @extend %center;
+    &__heading {
+        color: $color-primary-blue;
+        margin-bottom: 20px;
+        font-size: em(22px);
+        font-weight: $font-weight-bold;
+    }
+
+    &__paragraph {
+        color: #1A519E;
+        line-height: 1.5;
+        font-size: em(16px);
+        font-weight: $font-weight-medium;
+    }   
+
+    &__button {
+        outline: none;  
+        border: none;
+        margin-top: 20px;
+        @include btn-style(80%, 8px 0, white, $color-primary-blue, em(17px), $font-weight-bold);
+    }
+}
+
+@include mq('large') {
+    .info-div {
+        &__heading {
+            font-size: em(28px);
+        }
+
+        &__paragraph {
+            font-size: em(20px);
+        }
+
+        &__button {
+            @include btn-style(30%, 10px 0, white, $color-primary-blue, em(19px), $font-weight-bold);
+            margin-right: 20px;
+        }
+    }
+}
