@@ -9,14 +9,14 @@
 
 }
 
-.flex-container-items {
+.flex-item {
     margin-bottom: 30px;
     &__img {
         margin-bottom: 20px;
     }
 
     &__description {
-        margin: auto;
+        margin-top: 16px;
         text-align: center;
         font-size: em(20px);
         font-weight: $font-weight-medium;
@@ -36,13 +36,15 @@
 }
 
     .flex-container {
-        @include flexy();
+        @include flexy($just: space-around);
     }
 
-    .flex-container-items {
+    .flex-item {
         flex-grow: 1;
         flex-basis: px-to-pct(200px);
+        margin-bottom: 80px;
         &__description {
+            margin-top: 16px;
             font-size: em(24px);
         }
       

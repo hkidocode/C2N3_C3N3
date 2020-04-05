@@ -148,12 +148,12 @@ a {
   font-weight: 700;
   margin-bottom: 20px; }
 
-.flex-container-items {
+.flex-item {
   margin-bottom: 30px; }
-  .flex-container-items__img {
+  .flex-item__img {
     margin-bottom: 20px; }
-  .flex-container-items__description {
-    margin: auto;
+  .flex-item__description {
+    margin-top: 16px;
     text-align: center;
     font-size: 1.25em;
     font-weight: 600; }
@@ -165,11 +165,14 @@ a {
       font-size: 1.625em;
       margin-bottom: 60px; }
   .flex-container {
-    display: flex; }
-  .flex-container-items {
+    display: flex;
+    justify-content: space-around; }
+  .flex-item {
     flex-grow: 1;
-    flex-basis: 1250%; }
-    .flex-container-items__description {
+    flex-basis: 1250%;
+    margin-bottom: 80px; }
+    .flex-item__description {
+      margin-top: 16px;
       font-size: 1.5em; } }
 
 .recommendation-section {
