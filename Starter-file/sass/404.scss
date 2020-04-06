@@ -1,0 +1,64 @@
+@import 'abstracts/variables', 'abstracts/mixins', 'abstracts/functions';
+@import 'base/base', 'base/helpers';
+@import 'components/buttons', 'components/navbar';
+@import 'layout/footer';
+
+.error-content {
+    text-align: center;
+    margin-top: 140px;
+
+    &__img {
+        width: 60%;
+    }
+    &__title {
+        color: $color-primary-blue;
+        font-size: em(32px);
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    &__button {
+        outline: none;
+        border: none;
+        @include btn-style(60%, 8px 0, white, $color-primary-blue, em(20px), $font-weight-bold);
+
+        a {
+            color: white;
+        }
+    }
+}
+
+
+@include mq('medium') {
+    .error-content {
+
+        &__title {
+            font-size: em(36px);
+        }
+
+        &__button {
+            @include btn-style(40%, 8px 0, white, $color-primary-blue, em(22px), $font-weight-bold);
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@include mq('large') {
+    .error-content {
+
+        &__img {
+            width: 50%;
+        }
+
+        &__title {
+            font-size: em(42px);
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        &__button {
+            @include btn-style(30%, 8px 0, white, $color-primary-blue, em(22px), $font-weight-bold);
+            margin-bottom: 20px;
+            
+        }
+    }
+}
