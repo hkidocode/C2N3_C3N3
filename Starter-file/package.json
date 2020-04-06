@@ -5,8 +5,9 @@
   "main": "script.js",
   "scripts": {
     "watch": "node-sass -w sass -o dist/css",
-    "prefix": "postcss dist/css/main.css --use=autoprefixer --map=false --output=dist/css/main.prefix.css",
-    "compress": "node-sass dist/css/main.prefix.css dist/css/main.css --output-style compressed"
+    "concat": "concat -o dist/css/style.concat.css dist/css/acceuil.css dist/css/conseils.css",
+    "prefix": "postcss dist/css/style.concat.css --use=autoprefixer --map=false --output=dist/css/style.prefix.css",
+    "compress": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",
