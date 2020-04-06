@@ -29,6 +29,14 @@
     }
 }
 
+@include mq('medium') {
+    .info-div {
+        &__button {
+            @include btn-style(60%, 8px 0, white, $color-primary-blue, em(17px), $font-weight-bold);
+        }
+    }
+}
+
 @include mq('large') {
     .info-div {
         &__heading {
@@ -45,3 +53,4 @@
         }
     }
 }
+

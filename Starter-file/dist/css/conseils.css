@@ -166,6 +166,16 @@ a {
   font-size: 1.0625em;
   font-weight: 700; }
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .info-div__button {
+    width: 60%;
+    padding: 8px 0;
+    color: white;
+    background-color: #1078AD;
+    border-radius: 3px;
+    font-size: 1.0625em;
+    font-weight: 700; } }
+
 @media (min-width: 993px) and (max-width: 1400px) {
   .info-div__heading {
     font-size: 1.75em; }
@@ -213,6 +223,27 @@ a {
     .flex-item__description {
       margin-top: 16px;
       font-size: 1.5em; } }
+
+.transmet {
+  margin-top: 40px; }
+  .transmet__heading {
+    font-size: 1.25em;
+    color: #1078AD;
+    font-weight: 700;
+    margin-bottom: 20px; }
+
+.flex-item {
+  margin-bottom: 30px; }
+  .flex-item__img {
+    margin-bottom: 20px; }
+  .flex-item__description {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: #1A519E;
+    width: 40%;
+    margin: auto; }
 
 .recommendation-section {
   text-align: center;
