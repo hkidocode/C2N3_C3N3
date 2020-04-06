@@ -1,7 +1,7 @@
 .transmet {
-    text-align: center;
     margin-top: 40px;
     &__heading {
+        text-align: center;
         font-size: em(20px);
         color: $color-primary-blue;
         font-weight: $font-weight-bold;
@@ -11,6 +11,7 @@
 }
 
 .flex-item {
+    text-align: center;
     margin-bottom: 30px;
     &__img {
         margin-bottom: 20px;

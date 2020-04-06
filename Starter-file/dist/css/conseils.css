@@ -227,12 +227,14 @@ a {
 .transmet {
   margin-top: 40px; }
   .transmet__heading {
+    text-align: center;
     font-size: 1.25em;
     color: #1078AD;
     font-weight: 700;
     margin-bottom: 20px; }
 
 .flex-item {
+  text-align: center;
   margin-bottom: 30px; }
   .flex-item__img {
     margin-bottom: 20px; }
@@ -241,9 +243,7 @@ a {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
-    color: #1A519E;
-    width: 40%;
-    margin: auto; }
+    color: #1A519E; }
 
 .recommendation-section {
   text-align: center;
