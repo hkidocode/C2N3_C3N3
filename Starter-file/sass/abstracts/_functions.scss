@@ -10,9 +10,3 @@
 
 
 
-// Number of flex items per line
-@function per-line($items, $gutter) {
-    $g-pct : px-to-pct($gutter * 2);
-    $g-total: $items * $g-pct;
-    @return (100% / $items) - $g-total;
-}
