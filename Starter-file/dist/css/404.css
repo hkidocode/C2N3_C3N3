@@ -191,15 +191,15 @@ a {
   .contact {
     flex-basis: 1875%; }
     .contact__text {
-      font-size: 1em; }
+      font-size: 1.125em; }
     .contact__alo {
       font-size: 1em; }
     .contact__telephone {
-      font-size: 1em; }
+      font-size: 1.25em; }
     .contact__medicale {
       font-size: 1em; }
     .contact__114 {
-      font-size: 0.8125em; } }
+      font-size: 1.25em; } }
 
 .error-content {
   text-align: center;
