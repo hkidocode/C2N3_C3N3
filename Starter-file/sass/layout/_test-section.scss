@@ -1,0 +1,80 @@
+.formulaire {
+    @extend %center;
+    &__phases {
+        @include flexy($just: space-between);
+        margin-bottom: 26px;
+        &__step {
+            
+            .circle-shape {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                font-size: em(23px);
+                color: white;
+                font-weight: bold;
+                display: inline-block;
+                background-color: $color-accent-blue;
+            }
+    
+            .heading-phase {
+                padding-top: 8px;
+                font-size: em(16px);
+            }
+            
+            .current-step {
+                background-color: $color-neutral-yellow;
+            }
+        }
+    }
+
+    &__progressbar {
+        @include flexy($just: space-between);
+        margin-bottom: em(60px);
+        span {
+            font-size: em(15px);
+            font-weight: bold;
+        }
+
+        .outer-bar {
+            width: 86%;
+            height: 10px;
+            border-radius: 6px;
+            margin-top: em(3px);
+            background-color: $color-accent-blue;
+
+            .inner-bar {
+                width: 16px;
+                height: 10px;
+                border-radius: 6px;
+                background-color: $color-primary-blue;
+            }
+        }
+    }
+
+    &__introduction {
+        &__préambule {
+            background-color: $color-accent-blue;
+            padding: em(26px);
+            margin-bottom: em(30px);
+            &__title {
+                font-size: em(22px);
+                color: $color-primary-blue;
+                margin-bottom: em(16px);
+                font-weight: $font-weight-bold;
+            }
+
+            &__description{
+                line-height: 1.6;
+                font-weight: $font-weight-medium;
+            }
+        }
+        &__button {
+            border: 0;
+            display: block;
+            outline: none;
+            margin: auto;
+            @include btn-style(80%, 8px 0, white, $color-primary-blue, em(24px), $font-weight-bold);
+            margin-bottom: 40px;
+        }
+    }
+}

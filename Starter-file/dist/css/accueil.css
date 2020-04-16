@@ -16,7 +16,7 @@ li {
 a {
   text-decoration: none; }
 
-.last-info-div, .header-section-content__description, .symptômes-section, .footer {
+.last-info-div, .header-section-content__description, .formulaire, .symptômes-section, .footer {
   width: 85%;
   margin: auto;
   text-align: center; }
@@ -141,6 +141,71 @@ a {
         border-radius: 3px;
         font-size: 1.5em;
         font-weight: 700; } }
+
+.formulaire__phases {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px; }
+  .formulaire__phases__step .circle-shape {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.4375em;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #96C5DC; }
+  .formulaire__phases__step .heading-phase {
+    padding-top: 8px;
+    font-size: 1em; }
+  .formulaire__phases__step .current-step {
+    background-color: #F4CF1B; }
+
+.formulaire__progressbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.75em; }
+  .formulaire__progressbar span {
+    font-size: 0.9375em;
+    font-weight: bold; }
+  .formulaire__progressbar .outer-bar {
+    width: 86%;
+    height: 10px;
+    border-radius: 6px;
+    margin-top: 0.1875em;
+    background-color: #96C5DC; }
+    .formulaire__progressbar .outer-bar .inner-bar {
+      width: 16px;
+      height: 10px;
+      border-radius: 6px;
+      background-color: #1078AD; }
+
+.formulaire__introduction__préambule {
+  background-color: #96C5DC;
+  padding: 1.625em;
+  margin-bottom: 1.875em; }
+  .formulaire__introduction__préambule__title {
+    font-size: 1.375em;
+    color: #1078AD;
+    margin-bottom: 1em;
+    font-weight: 700; }
+  .formulaire__introduction__préambule__description {
+    line-height: 1.6;
+    font-weight: 600; }
+
+.formulaire__introduction__button {
+  border: 0;
+  display: block;
+  outline: none;
+  margin: auto;
+  width: 80%;
+  padding: 8px 0;
+  color: white;
+  background-color: #1078AD;
+  border-radius: 3px;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 40px; }
 
 .symptômes-section__heading {
   font-size: 1.375em;
