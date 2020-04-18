@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="formulaire__progressbar">
-            <span>1/22</span>
+            <span><span class="increment">1</span>/22</span>
             <div class="outer-bar">
                 <div class="inner-bar"></div>
             </div>
@@ -66,7 +66,8 @@
         <div class="formulaire__introduction">
             <div class="formulaire__introduction__préambule">
                 <h3 class="formulaire__introduction__préambule__title">Préambule</h3>
-                <p class="formulaire__introduction__préambule__description">« L’application est fournie à titre gratuit, en l’état,
+                <p class="formulaire__introduction__préambule__description">« L’application est fournie à titre gratuit,
+                    en l’état,
                     uniquement à
                     des fins d’information pour contribuer à fluidifier la prise en charge des personnes par les
                     services
@@ -74,7 +75,8 @@
                     jour
                     des informations et contenus mis à disposition dans cette application, ou leur adéquation à des
                     finalités particulières, ne sont pas garantis.</p>
-                <p class="formulaire__introduction__préambule__description"> L’utilisation de l’application et de son contenu ne remplace en
+                <p class="formulaire__introduction__préambule__description"> L’utilisation de l’application et de son
+                    contenu ne remplace en
                     aucun cas le conseil nécessaire donné par votre médecin ou votre pharmacien ou tout autre
                     professionnel
                     de santé compétent dans chaque cas particulier. Tout examen ou décision de l’utilisateur doit être
@@ -87,7 +89,371 @@
             <button class="formulaire__introduction__button">Démarrer le test</button>
         </div>
         <div class="formulaire__questions">
-
+            <div class="formulaire__questions__container one">
+                <h3>Quel est votre âge ?
+                    <br>Ceci, afin de calculer un facteur de risque spécifique.</h3>
+                <input type="number" id="age" name="question_answer" placeholder="age"> <strong>ans</strong>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container two">
+                <h3>Ces dernières 48 heures, quelle a été votre température la plus élevée ?</h3>
+                <input type="number" id="temperature" name="question_answer" placeholder="37,0"> <strong>degrés</strong>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container three">
+                <h3>Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container four">
+                <h3>Ces derniers jours, avez-vous noté une forte diminution ou perte de votre goût ou de votre odorat ?
+                </h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container five">
+                <h3>Ces derniers jours, avez-vous eu un mal de gorge et/ou des douleurs musculaires et/ou des
+                    courbatures inhabituelles ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container six">
+                <h3>Ces dernières 24 heures, avez-vous de la diarrhée ?
+                    <br>Avec au moins 3 selles molles.</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container seven">
+                <h3>Ces derniers jours, avez-vous une fatigue inhabituelle ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container eight">
+                <h3>Cette fatigue vous oblige-t-elle à vous reposer plus de la moitié de la journée ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container nine">
+                <h3>Depuis 24 heures ou plus, êtes-vous dans l'impossibilité de vous alimenter ou de boire ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container ten">
+                <h3>Ces dernières 24 heures, avez-vous noté un manque de souffle inhabituel lorsque vous parlez ou
+                    faites un petit effort ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container eleven">
+                <h3>Quel est votre taille ?
+                    <br>Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de
+                    complications de l’infection.</h3>
+                <input type="number" id="taille" name="question_answer"> <strong>cm</strong>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container twilve">
+                <h3>Quel est votre poids ?
+                    <br>Afin de calculer l’indice de masse corporelle qui est un facteur influençant le risque de
+                    complications de l’infection.</h3>
+                <input type="number" id="poids" name="question_answer"> <strong>kg</strong>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container thourteen">
+                <h3>Avez-vous de l’hypertension artérielle mal équilibrée ?<br>
+                    Ou avez-vous une maladie cardiaque ou vasculaire ?<br>
+                    Ou prenez vous un traitement à visée cardiologique ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="ne-sait-pas" value="ne-sait-pas" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Ne sait pas
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container fourteen">
+                <h3>Êtes-vous diabétique ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container fifteen">
+                <h3>Avez-vous ou avez-vous eu un cancer ces trois dernières années ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container sixteen">
+                <h3>Avez-vous une maladie respiratoire ?
+                    <br>Ou êtes-vous suivi par un pneumologue ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container seventeen">
+                <h3>Avez-vous une insuffisance rénale chronique dialysée ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container eighteen">
+                <h3>Avez-vous une maladie chronique du foie ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container nighteen">
+                <h3>Êtes-vous enceinte ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="non-applicable" value="non-applicable" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non applicable
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container twenty">
+                <h3>Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="ne-sait-pas" value="ne-sait-pas" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Ne sait pas
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container twenty-one">
+                <h3>Prenez-vous un traitement immunosuppresseur ?<br>
+                    C’est un traitement qui diminue vos défenses contre les infections.<br>
+                    Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine,
+                    cyclophosphamide (liste non exhaustive).</h3>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="yes" value="yes" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Oui
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="no" value="no" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Non
+                </label>
+                <label for="question_answer" class="radio">
+                    <input type="radio" id="ne-sait-pas" value="ne-sait-pas" name="question_answer" class="radio__input">
+                    <div class="radio__radio"></div>
+                    Ne sait pas
+                </label>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
+            <div class="formulaire__questions__container twenty-two">
+                <h3>Quel est votre code postal ?<br>
+                    Cette information nous permet de réaliser un suivi épidémiologique</h3>
+                <input type="number" id="code-postal" name="question_answer"> <strong>Votre code postal</strong>
+                <div class="buttons">
+                    <button>Suivant</button>
+                    <button>Précéndent</button>
+                </div>
+            </div>
         </div>
     </section>
     <section class="symptômes-section">
