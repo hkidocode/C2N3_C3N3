@@ -1,11 +1,12 @@
 .formulaire {
     @extend %center;
+    margin-top: em(40px);
     &__phases {
         @include flexy($just: space-between);
         margin-bottom: 26px;
         &__step {
             
-            .circle-shape {
+            .circle-shape-one, .circle-shape-two, .circle-shape-three {
                 width: 28px;
                 height: 28px;
                 border-radius: 50%;
@@ -30,20 +31,20 @@
     &__progressbar {
         @include flexy($just: space-between);
         margin-bottom: em(60px);
-        span {
+        span, .increment {
             font-size: em(15px);
             font-weight: bold;
         }
 
-        .outer-bar {
+        #outer-bar {
             width: 86%;
             height: 10px;
             border-radius: 6px;
             margin-top: em(3px);
             background-color: $color-accent-blue;
 
-            .inner-bar {
-                width: 16px;
+            #inner-bar {
+                width: 4.1%;
                 height: 10px;
                 border-radius: 6px;
                 background-color: $color-primary-blue;
@@ -54,7 +55,7 @@
     &__introduction {
         &__préambule {
             background-color: $color-accent-blue;
-            padding: em(26px);
+            padding: em(20px);
             margin-bottom: em(30px);
             &__title {
                 font-size: em(22px);
@@ -72,8 +73,9 @@
             border: 0;
             display: block;
             outline: none;
+            cursor: pointer;
             margin: auto;
-            @include btn-style(80%, 8px 0, white, $color-primary-blue, em(24px), $font-weight-bold);
+            @include btn-style(60%, 6px 0, white, $color-primary-blue, em(22px), $font-weight-bold);
             margin-bottom: 40px;
         }
     }
@@ -92,59 +94,200 @@
                 outline: 0;
                 border-radius: 3px;
                 padding: em(10px);
-                margin-right: em(12px);
+                margin-right: em(6px);
                 border: 1px solid grey;
             }
 
-            input:active {
-                border: 1px solid grey;;
+            strong {
+                margin-top: em(8px);
             }
+        }
 
-            .buttons {
-                margin-top: em(40px);
-                @include flexy($just: space-between);
 
-                button {
-                    border: 0;
-                    outline: none;
-                    margin: auto;
-                    @include btn-style(40%, 8px 0, white, $color-primary-blue, em(18px), $font-weight-bold);
+    }
+
+    .buttons {
+        margin-top: em(40px);
+        margin-bottom: em(40px);
+        @include flexy($just: space-evenly);
+
+        .next, .back {  
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            margin: auto;
+            @include btn-style(40%, 8px 0, white, $color-primary-blue, em(18px), $font-weight-bold);
+        }
+    }
+    
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.flex {
+    @include flexy($just: space-around);
+}
+
+@include mq('medium') {
+    .formulaire {
+        &__progressbar {
+            span, .increment {
+                font-size: em(17px);
+            }
+    
+            #outer-bar {
+                width: 92%;
+                height: 13px;
+                border-radius: 7px;
+                margin-top: em(5px);
+                
+    
+                #inner-bar {
+                    width: 4.4%;
+                    height: 13px;
+                    border-radius: 7px;
                 }
             }
+        }
+        &__introduction {
+            &__préambule {
+                padding: em(50px) em(26px);
+                    &__title {
+                        font-size: em(26px);
+                    }
 
-            .radio {
-                display: inline-flex;
-                margin-right: em(30px);
-                cursor: pointer;
-                &__input {
-                    display: none;
-                 }
-                &__radio {
-                    width: 1.30em;
-                    height: 1.30em;
-                    border: 2px solid $color-primary-blue;
-                    border-radius: 50%;
+                    &__description{
+                        line-height: 1.7;
+                    }
+            }
+            &__button {
+                @include btn-style(50%, 8px 0, white, $color-primary-blue, em(25px), $font-weight-bold);
+                
+            }
+        }
+        &__questions {
+            margin: em(70px) 0;
+            &__container {
+                margin-bottom: em(100px);
+                h3 {
+                    margin: em(50px) 0;
+                    line-height: 1.5;
+                    font-size: em(23px);
+                }
+    
+                input {
+                    padding: em(16px) em(60px);
                     margin-right: em(10px);
-                    padding: 2px;
                 }
-
-                &__radio::after {
-                    content: '';
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    border-radius: 50%;
-                    // transform: scale(0);
-                    background-color: $color-neutral-yellow;
-                    
+    
+                strong {
+                    font-size: em(20px);
                 }
-
-                // .radio__input:checked + .radio__radio::after {
-                //     transform: scale(1);
-                // }
             }
-
-
+    
+    
+        }
+        .buttons {
+            margin-bottom: em(60px);
+            .next, .back {  
+                @include btn-style(25%, 10px 0, white, $color-primary-blue, em(22px), $font-weight-bold);
+            }
         }
     }
 }
+
+@include mq('large') {
+    .formulaire {
+        &__progressbar {
+            span, .increment {
+                font-size: em(20px);
+                
+            }
+    
+            #outer-bar {
+                width: 94%;
+                height: 15px;
+                border-radius: 8px;
+                margin-top: em(8px);
+    
+                #inner-bar {
+                    width: 4.48%;
+                    height: 15px;
+                    border-radius: 7px;
+                }
+            }
+        }
+
+        &__phases {
+            &__step {
+                .circle-shape-one, .circle-shape-two, .circle-shape-three {
+                    width: 40px;
+                    height: 40px;
+                    padding: em(2px);
+                    font-size: em(28px);
+                }
+        
+                .heading-phase {
+                    padding-top: 12px;
+                    font-size: em(18px);
+                }
+            }
+        }
+        &__introduction {
+            &__préambule {
+                padding: em(44px) em(22px);
+                width: 75%;
+                margin: 0 auto;
+                margin-bottom: em(50px);
+                    &__title {
+                        font-size: em(30px);
+                    }
+
+                    &__description{
+                        line-height: 1.8;
+                        font-size: em(20px);
+                    }
+            }
+            &__button {
+                @include btn-style(34%, 10px 0, white, $color-primary-blue, em(27px), $font-weight-bold);
+                
+            }
+        }
+
+        &__questions {
+            &__container {
+                h3 {
+                    line-height: 1.7;
+                    font-size: em(32px);
+                }
+    
+                input {
+                    padding: em(10px) em(30px);
+                    margin-right: em(12px);
+                    margin-bottom: em(20px);
+                    font-size: em(22px);
+                }
+    
+                strong {
+                    font-size: em(26px);
+                }
+            }
+    
+    
+        }
+
+        .buttons {
+            margin-bottom: em(70px);
+            .next, .back {  
+                @include btn-style(20%, 14px 0, white, $color-primary-blue, em(24px), $font-weight-bold);
+            }
+        }
+    }
+}
+

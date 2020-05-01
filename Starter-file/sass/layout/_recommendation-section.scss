@@ -68,7 +68,16 @@
         display: block;
         outline: none;
         margin: auto;
-        @include btn-style(60%, 6px 0, white, $color-primary-blue, em(19px), $font-weight-medium);
+        
+        @include btn-style(50%, 6px 0, white, $color-primary-blue, em(19px), $font-weight-medium);
+    }
+}
+
+@include mq('medium') {
+    .test-rappel {
+        &__button {
+            @include btn-style(30%, 6px 0, white, $color-primary-blue, em(19px), $font-weight-medium);
+        }
     }
 }
 

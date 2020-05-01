@@ -318,13 +318,23 @@ a {
     display: block;
     outline: none;
     margin: auto;
-    width: 60%;
+    width: 50%;
     padding: 6px 0;
     color: white;
     background-color: #1078AD;
     border-radius: 3px;
     font-size: 1.1875em;
     font-weight: 600; }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .test-rappel__button {
+    width: 30%;
+    padding: 6px 0;
+    color: white;
+    background-color: #1078AD;
+    border-radius: 3px;
+    font-size: 1.1875em;
+    font-weight: 600; } }
 
 @media (min-width: 993px) and (max-width: 1400px) {
   .recommendation-section {
