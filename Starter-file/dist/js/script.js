@@ -232,7 +232,7 @@ buttonIntro.addEventListener('click', () => {
     circleShapeOne.classList.toggle('current-step');
     circleShapeTwo.classList.toggle('current-step');
     next.classList.toggle('hide');
-    back.classList.toggle('hide');
+    back.classList.add('hide');
     formulaireQuestions.innerHTML = display[0];
 
 
@@ -249,9 +249,8 @@ next.addEventListener('click', () => {
     formulaireQuestions.innerHTML = display[i];
     count.textContent = i + 1;
 
-    incrementBar.style.width = `${totalBar.style.width / 21}`
-    console.log(incrementBar.style.width);
-    console.log(totalBar.style.width);
+    incrementBar.style.width = `${totalBar.style.width / 21}`;
+    back.classList.remove('hide');
     // const inputs = formulaireQuestions.getElementsByTagName('input');
     
 
@@ -270,6 +269,7 @@ back.addEventListener('click', () => {
     i--;
     if (i < 0) {
         i = 0;
+        back.classList.add('hide');
     }
     formulaireQuestions.innerHTML = display[i];
     count.textContent = i + 1;
