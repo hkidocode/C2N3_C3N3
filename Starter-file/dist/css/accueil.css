@@ -251,6 +251,16 @@ a {
       border-radius: 3px;
       font-size: 1.125em;
       font-weight: 700; }
+  .formulaire__result {
+    background-color: #F4CF1B;
+    color: #1078AD;
+    padding: 1.625em;
+    font-size: 1.375em;
+    font-weight: bold;
+    border-radius: 6px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 7.5em; }
 
 .hide {
   display: none; }
@@ -310,7 +320,10 @@ a {
       background-color: #1078AD;
       border-radius: 3px;
       font-size: 1.375em;
-      font-weight: 700; } }
+      font-weight: 700; }
+  __result {
+    padding: 2.125em;
+    font-size: 1.5em; } }
 
 @media (min-width: 993px) and (max-width: 1400px) {
   .formulaire__progressbar span, .formulaire__progressbar .increment {
@@ -369,7 +382,11 @@ a {
       background-color: #1078AD;
       border-radius: 3px;
       font-size: 1.5em;
-      font-weight: 700; } }
+      font-weight: 700; }
+  __result {
+    padding: 2.5em;
+    font-size: 2em;
+    border-radius: 10px; } }
 
 .symptômes-section__heading {
   font-size: 1.375em;

@@ -5,7 +5,8 @@ const questions = [
         choices: ['ans'],
         type: "number",
         name: "questions-answers",
-        id: "1"
+        id: "age",
+        value: [""]
 
     },
     {
@@ -14,7 +15,8 @@ const questions = [
         choices: ['cm'],
         type: "number",
         name: "question-answers",
-        id: "2"
+        id: "taille",
+        value: [""]
 
     },
     {
@@ -23,7 +25,8 @@ const questions = [
         choices: ['kg'],
         type: "number",
         name: "question-answers",
-        id: "3"
+        id: "poids",
+        value: [""]
 
     },
     {
@@ -31,7 +34,17 @@ const questions = [
         choices: ['degrés'],
         type: "number",
         name: "question-answers",
-        id: "4"
+        id: "température",
+        value: [""]
+
+    },
+    {
+        question: 'Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?',
+        choices: ['Oui', 'Non'],
+        type: "radio",
+        name: "question-answers",
+        id: "fièvre",
+        value: ["oui", "non"]
 
     },
     {
@@ -39,7 +52,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "5"
+        id: "toux",
+        value: ["oui", "non"]
 
     },
     {
@@ -47,7 +61,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "6"
+        id: "odorat",
+        value: ["oui", "non"]
 
     },
     {
@@ -55,7 +70,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "7"
+        id: "gorge-douleurs-courbatures",
+        value: ["oui", "non"]
 
     },
     {
@@ -64,7 +80,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "8"
+        id: "diarrhée",
+        value: ["oui", "non"]
 
     },
     {
@@ -72,7 +89,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "9"
+        id: "fatigue",
+        value: ["oui", "non"]
 
     },
     {
@@ -80,7 +98,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "10"
+        id: "fatigue-moitié-journée",
+        value: ["oui", "non"]
 
     },
     {
@@ -88,15 +107,17 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "11"
+        id: "impossibilité-alimenter-boire",
+        value: ["oui", "non"]
 
     },
     {
-        question: 'Ces dernières 24 heures, avez-vous noté un manque de souffle inhabituel lorsque vous parlez ou faites un petit effort ?',
-        choices: ['Oui', 'Non'],
+        question: 'Actuellement, comment vous vous sentez ?',
+        choices: ['Bien', 'Assez bien', 'Fatigué(e)', 'Très fatigué(e)'],
         type: "radio",
         name: "question-answers",
-        id: "12"
+        id: "sensation-de-malaise",
+        value: ["bien", "assez-bien", "fatigué", "très-fatigué"]
 
     },
     {
@@ -105,7 +126,8 @@ const questions = [
         choices: ['Oui', 'Non', 'Ne sait pas'],
         type: "radio",
         name: "question-answers",
-        id: "13"
+        id: "hypertension-artérielle",
+        value: ["oui", "non"]
 
     },
     {
@@ -113,7 +135,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "14"
+        id: "diabétique",
+        value: ["oui", "non"]
 
     },
     {
@@ -121,7 +144,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "15"
+        id: "cancer",
+        value: ["oui", "non"]
 
     },
     {
@@ -130,7 +154,17 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "16"
+        id: "respiratoire",
+        value: ["oui", "non"]
+
+    },
+    {
+        question: `Avez-vous vu apparaître une gêne respiratoire ou une augmentation de votre gêne respiratoire habituelle ?`,
+        choices: ['Oui', 'Non'],
+        type: "radio",
+        name: "question-answers",
+        id: "gêne-respiratoire",
+        value: ["oui", "non"]
 
     },
     {
@@ -138,7 +172,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "17"
+        id: "dialysée",
+        value: ["oui", "non"]
 
     },
     {
@@ -146,7 +181,8 @@ const questions = [
         choices: ['Oui', 'Non'],
         type: "radio",
         name: "question-answers",
-        id: "18"
+        id: "foie",
+        value: ["oui", "non"]
 
     },
     {
@@ -154,7 +190,8 @@ const questions = [
         choices: ['Oui', 'Non', 'Non applicable'],
         type: "radio",
         name: "question-answers",
-        id: "19"
+        id: "enceinte",
+        value: ["oui", "non", "non-applicable"]
 
     },
     {
@@ -162,7 +199,8 @@ const questions = [
         choices: ['Oui', 'Non', 'Ne sait pas'],
         type: "radio",
         name: "question-answers",
-        id: "20"
+        id: "défenses-immunitaires",
+        value: ["oui", "non", "ne-sait-pas"]
 
     },
     {
@@ -172,7 +210,8 @@ const questions = [
         choices: ['Oui', 'Non', 'Ne sait pas'],
         type: "radio",
         name: "question-answers",
-        id: "21"
+        id: "traitement-immunosuppresseur",
+        value: ["oui", "non", "ne-sait-pas"]
 
     }
 ];
@@ -188,35 +227,56 @@ const intro = document.querySelector('.formulaire__introduction');
 const buttonIntro = document.querySelector('.formulaire__introduction__button');
 const circleShapeOne = document.querySelector('.circle-shape-one');
 const circleShapeTwo = document.querySelector('.circle-shape-two');
+const circleShapeThree = document.querySelector('.circle-shape-three');
 const formulaireQuestions = document.querySelector('.formulaire__questions');
+const progressBar = document.querySelector('.formulaire__progressbar')
 const count = document.querySelector('.increment');
 const incrementBar = document.getElementById('inner-bar');
 const totalBar = document.getElementById('outer-bar');
 const buttonsDiv = document.querySelector('.buttons');
 const next = document.querySelector('.next');
 const back = document.querySelector('.back');
+const resultQuestionnaire = document.querySelector('.formulaire__result');
 
 
-let questionContent = '';
-questions.forEach(questionElement => {
+
+function createQuestions(array) {
+    let questionContent = '';
     let answers = '';
-    for (let i = 0; i < questionElement.choices.length; i++) {
+    for (let i = 0; i < array.choices.length; i++) {
         answers +=
             `<div>
-            <input type=${questionElement.type} name=${questionElement.name} id=${questionElement.id}> <strong>${questionElement.choices[i]}</strong>
+            <input type=${array.type} name=${array.name} id=${array.id} value=${array.value[i]}> <strong>${array.choices[i]}</strong>
         </div>`;
     }
-
     questionContent +=
         `<div class="formulaire__questions__container">
-                <h3>${questionElement.question}</h3>
+                <h3>${array.question}</h3>
                     <div class="flex">
                         ${answers}
                     </div>
             </div>`;
     display.push(questionContent);
-    questionContent = '';
-});
+}
+
+for (let i = 0; i < questions.length; i++) {
+    createQuestions(questions[i]);
+}
+
+function incrementProgressBar() {
+    let totalWidth = totalBar.style.width;
+    let incrementWidth = incrementBar.style.width;
+    console.log(totalWidth);
+    incrementWidth += (totalWidth / 22);
+    return incrementWidth;
+
+}
+
+function decrementProgressBar() {
+    let totalWidth = totalBar.style.width;
+    incrementBar.style.width -= (totalWidth / 22);
+
+}
 
 buttonHeader.addEventListener('click', () => {
     header.classList.toggle('hide');
@@ -232,7 +292,6 @@ buttonIntro.addEventListener('click', () => {
     circleShapeOne.classList.toggle('current-step');
     circleShapeTwo.classList.toggle('current-step');
     next.classList.toggle('hide');
-    back.classList.add('hide');
     formulaireQuestions.innerHTML = display[0];
 
 
@@ -241,25 +300,125 @@ buttonIntro.addEventListener('click', () => {
 });
 
 
+let value;
+let idName;
+let valuesofQuestions = [];
+let facteurPronistique = 0;
+let facteurMineur = 0;
+let facteurMajour = 0;
+formulaireQuestions.addEventListener('change', (event) => {
+    event.preventDefault();
+    idName = event.target.id;
+    value = event.target.value;
+    valuesofQuestions.push(value);
+    if (idName === 'hypertension-artérielle' || idName === 'diabétique' || idName === 'cancer' || idName === 'respiratoire' || idName === '"dialysée' || idName === 'foie' || idName === 'enceinte' || idName === 'défenses-immunitaires' || idName === 'traitement-immunosuppresseur') {
+        if (value === 'oui') {
+            facteurPronistique++;
+        }
+    }
+
+    if (idName === 'fatigue' || idName === 'sensation-de-malaise') {
+        if (value === 'oui') {
+            facteurMineur++;
+        }
+    }
+
+    if (idName === 'gêne-respiratoire' || idName === 'impossibilité-alimenter-boire') {
+        if (value === 'oui') {
+            facteurMajour++;
+        }
+    }
+
+
+    if (idName === 'température') {
+        if (value >= 39) {
+            facteurMineur++;
+        } else if (value <= 35.4) {
+            facteurMajour++;
+        }
+    }
+
+
+    if (idName === 'age') {
+        if (value < 15) {
+            formulaireQuestions.classList.add('hide');
+            formulaireQuestions.classList.add('hide');
+            buttonsDiv.classList.remove('show');
+            next.classList.add('hide');
+            back.classList.add('hide');
+            progressBar.classList.add('hide');
+            circleShapeTwo.classList.toggle('current-step');
+            circleShapeThree.classList.toggle('current-step');
+            resultQuestionnaire.classList.remove('hide');
+            resultQuestionnaire.innerHTML = `Prenez contact avec votre médecin généraliste au moindre doute.
+            Cette application n’est pour l’instant pas adaptée aux personnes de moins de 15 ans. En cas d’urgence, appeler le 15.`;
+        } else if (value >= 70) {
+            facteurPronistique++;
+        }
+    }
+
+
+});
+
+
+function resultTest() {
+    if (facteurPronistique === 0 || (facteurMineur === 0 || facteurMajour === 0) && valuesofQuestions[0] === 50) {
+        resultQuestionnaire.innerHTML = `Nous vous conseillons de rester à votre domicile et
+    de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez
+    aussi utiliser à nouveau l’application pour réévaluer vos symptômes.`;
+    } else if (((facteurMineur === 0 || facteurMajour === 0) && (valuesofQuestions[0] >= 50 && valuesofQuestions[0] < 70)) || facteurMineur === 1 || (facteurMineur === 0 || facteurMajour === 0) || ((facteurMineur === 0 || facteurMajour === 0) || (facteurMineur >= 1 && facteurMajour === 0)) || facteurPronistique === 0) {
+        resultQuestionnaire.innerHTML = `Téléconsultation ou médecin généraliste ou visite à domicile`;
+    } else if (facteurPronistique >= 1 || facteurMineur >= 2 || valuesofQuestions[12] === 'oui' || valuesofQuestions[17] === 'oui' || (facteurPronistique === 0 && facteurMajour >= 1) || facteurPronistique === 0 || facteurMajour >= 1 || (facteurPronistique === 0 && facteurMajour >= 1)) {
+        resultQuestionnaire.innerHTML = `Appel 141`;
+    } else if (idName === 'fièvre' || idName === 'toux' || idName === 'gorge-douleurs-courbatures') {
+        if (valuesofQuestions[4] === 'oui' || valuesofQuestions[5] === 'oui' || valuesofQuestions[7] === 'oui') {
+            if (facteurMineur === 0 || facteurMajour === 0) {
+                resultQuestionnaire.innerHTML = `Votre situation ne relève probablement pas du Covid-19. Consultez votre
+            médecin au moindre doute`;
+            } else if ((facteurMineur >= 1 || facteurMajour >= 1) || facteurPronistique >= 1) {
+                resultQuestionnaire.innerHTML = `Votre situation ne relève probablement pas du Covid-19. Un avis médical est
+            recommandé. Au moindre doute, appelez le 141.`;
+            }
+        }
+
+    } else if (idName === 'fièvre' && idName === 'toux' && idName === 'gorge-douleurs-courbatures' && idName === 'diarrhée' && idName === 'fatigue') {
+        if (valuesofQuestions[4] === 'non' && valuesofQuestions[4] === 'non' && valuesofQuestions[4] === 'non' && valuesofQuestions[4] === 'non' && valuesofQuestions[4] === 'non') {
+            resultQuestionnaire.innerHTML = `Votre situation ne relève probablement pas du Covid-19. N’hésitez pas à contacter votre
+        médecin en cas de doute. Vous pouvez refaire le test en cas de nouveau symptôme pour
+        réévaluer la situation. Pour toute information concernant le Covid-19 allez vers la page
+        d’accueil.`;
+        }
+    } else {
+        resultQuestionnaire.innerHTML = `Restez chez vous au maximum en attendant que les symptômes disparaissent.
+    Prenez votre température deux fois par jour. Rappel des mesures d’hygiène.`;
+    }
+
+}
+
+
+
 next.addEventListener('click', () => {
     i++;
-    if (i === display.length) {
-        i = display.length - 1;
+    if (i === display.length - 1) {
+        next.textContent = 'Résultat finale';
+
+    }
+
+    if(i === display.length) {
+        formulaireQuestions.classList.add('hide');
+        buttonsDiv.classList.remove('show');
+        back.classList.add('hide');
+        next.classList.add('hide');
+        progressBar.classList.add('hide');
+        circleShapeTwo.classList.toggle('current-step');
+        circleShapeThree.classList.toggle('current-step');
+        resultQuestionnaire.classList.remove('hide');
+        resultTest();
     }
     formulaireQuestions.innerHTML = display[i];
     count.textContent = i + 1;
-
-    incrementBar.style.width = `${totalBar.style.width / 21}`;
     back.classList.remove('hide');
-    // const inputs = formulaireQuestions.getElementsByTagName('input');
-    
 
-    // for (let i = 0; i < inputs.length; i++) {
-    //     console.log(inputs[i]);
-    //         if (inputs[i].type === 'number') {
-    //             console.log(inputs[i].value);
-    //         }
-    // }
 });
 
 
@@ -267,13 +426,23 @@ next.addEventListener('click', () => {
 
 back.addEventListener('click', () => {
     i--;
-    if (i < 0) {
-        i = 0;
-        back.classList.add('hide');
+    if (i === 0) {
+        back.classList.toggle('hide');
     }
+
+
     formulaireQuestions.innerHTML = display[i];
     count.textContent = i + 1;
 
+    value = event.target.value;
+    valuesofQuestions.pop(value);
+
 });
+
+
+
+
+
+
 
 

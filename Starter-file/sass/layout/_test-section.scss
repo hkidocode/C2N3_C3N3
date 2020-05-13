@@ -119,6 +119,17 @@
             @include btn-style(40%, 8px 0, white, $color-primary-blue, em(18px), $font-weight-bold);
         }
     }
+    &__result {
+        background-color: $color-neutral-yellow;
+        color: $color-primary-blue;
+        padding: em(26px);
+        font-size: em(22px);
+        font-weight: bold;
+        border-radius: 6px;
+        width: 70%;
+        margin: auto;
+        margin-bottom: em(120px);
+    }
     
 }
 
@@ -199,6 +210,11 @@
                 @include btn-style(25%, 10px 0, white, $color-primary-blue, em(22px), $font-weight-bold);
             }
         }
+    }
+
+    &__result {
+        padding: em(34px);
+        font-size: em(24px);
     }
 }
 
@@ -288,6 +304,12 @@
                 @include btn-style(20%, 14px 0, white, $color-primary-blue, em(24px), $font-weight-bold);
             }
         }
+    }
+
+    &__result {
+        padding: em(40px);
+        font-size: em(32px);
+        border-radius: 10px;
     }
 }
 
