@@ -213,7 +213,7 @@ const questions = [
         id: "traitement-immunosuppresseur",
         value: ["oui", "non", "ne-sait-pas"]
 
-    }
+    },
 ];
 
 
