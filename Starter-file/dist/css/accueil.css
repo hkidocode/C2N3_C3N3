@@ -242,7 +242,6 @@ a {
     .formulaire .buttons .next, .formulaire .buttons .back {
       border: 0;
       outline: none;
-      cursor: pointer;
       margin: auto;
       width: 40%;
       padding: 8px 0;
@@ -251,6 +250,10 @@ a {
       border-radius: 3px;
       font-size: 1.125em;
       font-weight: 700; }
+    .formulaire .buttons .next:hover {
+      box-shadow: 0 20px 50px #96C5DC; }
+    .formulaire .buttons .back:hover {
+      box-shadow: 0 20px 50px #96C5DC; }
   .formulaire__result {
     background-color: #F4CF1B;
     color: #1078AD;

@@ -221,6 +221,9 @@ let i = 0;
 let display = [];
 
 const header = document.querySelector('.header-section');
+const symptôme = document.querySelector('.symptômes-section');
+const recommendation = document.querySelector('.recommendation-section');
+const testRappel = document.querySelector('.test-rappel');
 const formulaire = document.querySelector('.formulaire');
 const buttonHeader = document.querySelector('.header-section-content__button');
 const intro = document.querySelector('.formulaire__introduction');
@@ -237,6 +240,7 @@ const buttonsDiv = document.querySelector('.buttons');
 const next = document.querySelector('.next');
 const back = document.querySelector('.back');
 const resultQuestionnaire = document.querySelector('.formulaire__result');
+const buttonTestFooter = document.querySelector('.test-rappel__button');
 
 
 
@@ -284,6 +288,14 @@ buttonHeader.addEventListener('click', () => {
 
 });
 
+buttonTestFooter.addEventListener('click', () => {
+    header.classList.toggle('hide');
+    formulaire.classList.toggle('hide');
+    symptôme.classList.toggle('hide');
+    recommendation.classList.toggle('hide');
+    testRappel.classList.toggle('hide');
+});
+
 
 
 buttonIntro.addEventListener('click', () => {
@@ -293,9 +305,6 @@ buttonIntro.addEventListener('click', () => {
     circleShapeTwo.classList.toggle('current-step');
     next.classList.toggle('hide');
     formulaireQuestions.innerHTML = display[0];
-
-
-
 
 });
 
@@ -307,58 +316,45 @@ let facteurPronistique = 0;
 let facteurMineur = 0;
 let facteurMajour = 0;
 formulaireQuestions.addEventListener('change', (event) => {
-    event.preventDefault();
     idName = event.target.id;
     value = event.target.value;
     valuesofQuestions.push(value);
-    if (idName === 'hypertension-artérielle' || idName === 'diabétique' || idName === 'cancer' || idName === 'respiratoire' || idName === '"dialysée' || idName === 'foie' || idName === 'enceinte' || idName === 'défenses-immunitaires' || idName === 'traitement-immunosuppresseur') {
-        if (value === 'oui') {
-            facteurPronistique++;
-        }
-    }
-
-    if (idName === 'fatigue' || idName === 'sensation-de-malaise') {
-        if (value === 'oui') {
-            facteurMineur++;
-        }
-    }
-
-    if (idName === 'gêne-respiratoire' || idName === 'impossibilité-alimenter-boire') {
-        if (value === 'oui') {
-            facteurMajour++;
-        }
-    }
-
-
-    if (idName === 'température') {
-        if (value >= 39) {
-            facteurMineur++;
-        } else if (value <= 35.4) {
-            facteurMajour++;
-        }
-    }
-
-
-    if (idName === 'age') {
-        if (value < 15) {
-            formulaireQuestions.classList.add('hide');
-            formulaireQuestions.classList.add('hide');
-            buttonsDiv.classList.remove('show');
-            next.classList.add('hide');
-            back.classList.add('hide');
-            progressBar.classList.add('hide');
-            circleShapeTwo.classList.toggle('current-step');
-            circleShapeThree.classList.toggle('current-step');
-            resultQuestionnaire.classList.remove('hide');
-            resultQuestionnaire.innerHTML = `Prenez contact avec votre médecin généraliste au moindre doute.
-            Cette application n’est pour l’instant pas adaptée aux personnes de moins de 15 ans. En cas d’urgence, appeler le 15.`;
-        } else if (value >= 70) {
-            facteurPronistique++;
-        }
-    }
-
+    
 
 });
+
+
+
+
+if (idName === 'hypertension-artérielle' || idName === 'diabétique' || idName === 'cancer' || idName === 'respiratoire' || idName === '"dialysée' || idName === 'foie' || idName === 'enceinte' || idName === 'défenses-immunitaires' || idName === 'traitement-immunosuppresseur') {
+    if (value === 'oui') {
+        facteurPronistique++;
+    }
+}
+
+if (idName === 'fatigue' || idName === 'sensation-de-malaise') {
+    if (value === 'oui') {
+        facteurMineur++;
+    }
+}
+
+if (idName === 'gêne-respiratoire' || idName === 'impossibilité-alimenter-boire') {
+    if (value === 'oui') {
+        facteurMajour++;
+    }
+}
+
+
+if (idName === 'température') {
+    if (value >= 39) {
+        facteurMineur++;
+    } else if (value <= 35.4) {
+        facteurMajour++;
+    }
+}
+
+
+
 
 
 function resultTest() {
@@ -404,7 +400,7 @@ next.addEventListener('click', () => {
 
     }
 
-    if(i === display.length) {
+    if (i === display.length) {
         formulaireQuestions.classList.add('hide');
         buttonsDiv.classList.remove('show');
         back.classList.add('hide');
@@ -415,6 +411,25 @@ next.addEventListener('click', () => {
         resultQuestionnaire.classList.remove('hide');
         resultTest();
     }
+
+    if (idName === 'age') {
+        if (value < 15) {
+            formulaireQuestions.classList.add('hide');
+            buttonsDiv.classList.remove('show');
+            next.classList.add('hide');
+            back.classList.add('hide');
+            progressBar.classList.add('hide');
+            circleShapeTwo.classList.toggle('current-step');
+            circleShapeThree.classList.toggle('current-step');
+            resultQuestionnaire.classList.remove('hide');
+            resultQuestionnaire.innerHTML = `Prenez contact avec votre médecin généraliste au moindre doute.
+                Cette application n’est pour l’instant pas adaptée aux personnes de moins de 15 ans. En cas d’urgence, appeler le 15.`;
+        } else if (value >= 70) {
+            facteurPronistique++;
+        }
+    }
+ 
+
     formulaireQuestions.innerHTML = display[i];
     count.textContent = i + 1;
     back.classList.remove('hide');

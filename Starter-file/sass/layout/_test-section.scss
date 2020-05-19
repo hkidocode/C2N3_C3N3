@@ -114,10 +114,21 @@
         .next, .back {  
             border: 0;
             outline: none;
-            cursor: pointer;
             margin: auto;
             @include btn-style(40%, 8px 0, white, $color-primary-blue, em(18px), $font-weight-bold);
+            
+            
         }
+
+        .next:hover {
+            box-shadow: 0 20px 50px $color-accent-blue;
+        }
+
+        .back:hover {
+            box-shadow: 0 20px 50px $color-accent-blue;
+        }
+
+        
     }
     &__result {
         background-color: $color-neutral-yellow;
