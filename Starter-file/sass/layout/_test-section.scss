@@ -114,6 +114,7 @@
         .next, .back {  
             border: 0;
             outline: none;
+            cursor: pointer;
             margin: auto;
             @include btn-style(40%, 8px 0, white, $color-primary-blue, em(18px), $font-weight-bold);
             

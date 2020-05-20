@@ -242,6 +242,7 @@ a {
     .formulaire .buttons .next, .formulaire .buttons .back {
       border: 0;
       outline: none;
+      cursor: pointer;
       margin: auto;
       width: 40%;
       padding: 8px 0;
