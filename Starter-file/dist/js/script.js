@@ -7,7 +7,7 @@ const questions = [
         name: "questions-answers",
         id: "age",
         value: [""],
-        pattern: "[0-1][0-9][0-9]"
+        
 
     },
     {
@@ -18,7 +18,7 @@ const questions = [
         name: "question-answers",
         id: "taille",
         value: [""],
-        pattern: "[0-3][4-9][0-9]"
+        
 
     },
     {
@@ -29,7 +29,7 @@ const questions = [
         name: "question-answers",
         id: "poids",
         value: [""],
-        pattern: "[0-3][0-9][5-9]"
+        
 
     },
     {
@@ -39,7 +39,7 @@ const questions = [
         name: "question-answers",
         id: "température",
         value: [""],
-        pattern: "[3][4-9]"
+        
 
     },
     {
